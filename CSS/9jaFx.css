@@ -12,14 +12,17 @@ nav {
     background: #292929;
     display: inline-flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     padding-inline: 5%;
+    height: 80px;
 }
 
 .dashboard {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    
+    max-height: 80px;
 }
 
 .logo-section{
@@ -50,10 +53,48 @@ nav {
 
 .navigate{
     flex: 1;
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigate ul {
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigate ul li{
+    padding-inline: 10px
+}
+
+.navigate ul li a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .reg-section {
     max-width: 300px;
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.reg-section .sign-in {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #292929;
+    font-weight: 600;
+    background: #fff;
+    border: 1;
 }
 
 
