@@ -9,8 +9,54 @@ body{
 }
 
 nav {
-    background: #292929 ;
+    background: #292929;
+    display: inline-flex;
+    width: 100%;
+    padding-inline: 5%;
 }
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.logo-section{
+    max-width: 500px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-section {
+    display: inline-flex;
+    margin-left: 30px;
+}
+
+.level-section ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.level-section ul li {
+    padding-inline: 8px;
+}
+
+.level-section ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigate{
+    flex: 1;
+}
+
+.reg-section {
+    max-width: 300px;
+}
+
+
 /*-----------------------Logo design----------------*/
 .logo span{
     display: inline-block;
