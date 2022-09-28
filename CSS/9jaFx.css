@@ -75,7 +75,8 @@ nav {
 }
 
 .navigate ul li{
-    padding-inline: 10px
+    padding-inline: 10px;
+    
 }
 
 .navigate ul li a{
@@ -83,6 +84,8 @@ nav {
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 5px;
+    transition: 0.15s;
+    cursor: pointer;
 }
 
 .navigate ul li a:hover{
@@ -140,6 +143,7 @@ button {
     -webkit-text-fill-color: transparent;
     transform: translateY(100px);
     opacity: 0;
+    cursor: pointer;
     transition: transform 1s, opacity 0.5s, -webkit-text-stroke-color 0.5s;
 }
 
@@ -184,37 +188,140 @@ button {
 
 .navigate ul li:hover .sub-Menu ul{ 
     display: inline-block;
-    background: #292929;
+    background: #fff;
     width: 500px;
-    height: 200px;
-    margin-top: 30px;
+    height: 220px;
+    margin-top: 20px;
     right: 195px;
     justify-content: center;
     align-items: center;
     position: absolute;
     text-align: left;
     border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px 2px;
     transition: 0.15s;
     columns: 2 150px;
-    column-gap: 20px;
+    column-gap: 10px;
     padding-top: 10px;
+    padding-inline: 8px;
 }
 
 .navigate ul li:hover .sub-Menu ul li{
     display: flex;
-    color: #fff;
+    color: #292929;
     flex-direction: column;
     font-size: 14px;
     padding: 15px 15px;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.navigate ul li:hover .sub-Menu ul li:hover{
+    background: rgba(41, 41, 41, 0.2);
+    background: rgb(0 0 0 / 10%) 0px 2px 4px 2px;
+    border-radius: 5px;
 }
 
 .navigate ul li:hover .menu ul {
     display: inline-block;
-    width: 200px;
+    width: 230px;
     height: 350px;
-    right: 280px;
+    right: 260px;
+    box-shadow: 0, 0, 0, 2px solid lightgray;
+    position: absolute;
 }
 
 .navigate ul li:hover .menu ul li{
     padding: 15px 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigate ul li:hover .menu ul li:hover{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+
+.menu-fa-align{
+    display: flex;
+}
+
+.menu-fa-align .fa-circle-question, .fa-brands, .fa-lightbulb, .fa-book-open{
+    margin-right: 10px;
+}
+
+
+
+.sub-Menu, .fa-solid{
+    margin-right: 5px;
+}
+
+.icon-align{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-align small{
+    margin-left: 20px;
+}
+
+
+.reg-section ul li:hover .sub-Menu {
+    display: block;
+}
+
+.reg-section ul li:hover .sub-Menu ul{ 
+    display: inline-block;
+    background: #fff;
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    right: 90px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: left;
+    border-radius: 5px;
+    transition: 0.15s;
+}
+
+.reg-section ul li:hover .sub-Menu ul li{
+    display: flex;
+    color: #292929;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 15px 15px;
+    transition: 0.9s;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.reg-section ul li:hover .sub-Menu ul li:hover{
+    background: rgba(41, 41, 41, 0.3);
+    border-radius: 5px;
+}
+
+.reg-section ul li:hover .Menu ul{
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    right: 50px;
+    margin-top: 10px;
+    box-shadow: 0, 0, 5, 2px solid gray;
+}
+
+.reg-section ul li:hover, .Menu ul li{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*-------------------SubHeader Section----------------------*/
+
+
+.sub-header{
+    width: 100%;
+    height: 180px;
+    background:#292929;
 }
