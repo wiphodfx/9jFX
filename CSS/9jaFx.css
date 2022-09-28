@@ -5,7 +5,7 @@
 }
 
 body{
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -26,15 +26,16 @@ nav {
 }
 
 .logo-section{
-    max-width: 500px;
+    max-width: 350px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .level-section {
     display: inline-flex;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .level-section ul{
@@ -42,13 +43,20 @@ nav {
     list-style: none;
 }
 
-.level-section ul li {
-    padding-inline: 8px;
-}
-
 .level-section ul li a{
     color: #fff;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.active-link{
+    font-weight: 350;
+    color: lightgray;
+    opacity: 0.6;
+}
+.level-section ul li a:hover{
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .navigate{
@@ -73,32 +81,57 @@ nav {
 .navigate ul li a{
     color: #fff;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navigate ul li a:hover{
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .reg-section {
-    max-width: 300px;
+    width: 200px;
     display: inline-flex;
     list-style: none;
     justify-content: center;
     align-items: center;
 }
-.reg-section .sign-in {
+
+.reg-section ul{
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.reg-section ul li a {
     text-decoration: none;
     color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: 0.15s;
+}
+
+.reg-section ul li a:hover{
+    background: rgba(255, 255, 255, 0.3);
 }
 
 button {
-    margin-left: 20px;
-    padding: 10px 20px;
+    padding: 8px 12px;
     border-radius: 5px;
     color: #292929;
     font-weight: 600;
     background: #fff;
-    border: 1;
+    cursor: pointer;
 }
 
 
+
 /*-----------------------Logo design----------------*/
+
+.logo{
+    min-width: 100px;
+}
 .logo span{
     display: inline-block;
     font-size: 40px;
@@ -136,4 +169,52 @@ button {
 }
 .logo:hover span{
     -webkit-text-stroke-color: #e8ffcd;
+}
+
+
+/*---------------------------SUBMENU Section---------------------------*/
+
+.sub-Menu{
+    display: none;
+}
+
+.navigate ul li:hover .sub-Menu {
+    display: block;
+}
+
+.navigate ul li:hover .sub-Menu ul{ 
+    display: inline-block;
+    background: #292929;
+    width: 500px;
+    height: 200px;
+    margin-top: 30px;
+    right: 195px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: left;
+    border-radius: 5px;
+    transition: 0.15s;
+    columns: 2 150px;
+    column-gap: 20px;
+    padding-top: 10px;
+}
+
+.navigate ul li:hover .sub-Menu ul li{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 15px 15px;
+}
+
+.navigate ul li:hover .menu ul {
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    right: 280px;
+}
+
+.navigate ul li:hover .menu ul li{
+    padding: 15px 12px;
 }
