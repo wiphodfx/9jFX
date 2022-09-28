@@ -217,9 +217,9 @@ button {
 }
 
 .navigate ul li:hover .sub-Menu ul li:hover{
-    background: rgba(41, 41, 41, 0.2);
-    background: rgb(0 0 0 / 10%) 0px 2px 4px 2px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px 2px;
     border-radius: 5px;
+    background: rgba(41, 41, 41, 0.3);
 }
 
 .navigate ul li:hover .menu ul {
@@ -227,7 +227,7 @@ button {
     width: 230px;
     height: 350px;
     right: 260px;
-    box-shadow: 0, 0, 0, 2px solid lightgray;
+    background: rgb(0 0 0 / 10%) 0px 2px 4px 2px;
     position: absolute;
 }
 
@@ -238,7 +238,7 @@ button {
 }
 
 .navigate ul li:hover .menu ul li:hover{
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(41, 41, 41, 0.3);
     border-radius: 5px;
 }
 
@@ -294,7 +294,7 @@ button {
     font-size: 14px;
     padding: 15px 15px;
     transition: 0.9s;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
 }
 
@@ -308,7 +308,7 @@ button {
     width: 150px;
     height: 80px;
     right: 50px;
-    margin-top: 10px;
+    margin-top: 12px;
     box-shadow: 0, 0, 5, 2px solid gray;
 }
 
