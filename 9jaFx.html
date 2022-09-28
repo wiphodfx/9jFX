@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/00f0886e17.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;800&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/9jaFx.css">
     <title>9jaFx</title>
 </head>
@@ -35,25 +38,25 @@
                         <li><a href="#">Tools</a>
                             <div class="sub-Menu">
                                 <ul>
-                                    <li><i class="fa-solid fa-chart-line"></i>Currency Charts <small>Trends for any currency</small></li>
-                                    <li><i class="fa-solid fa-bell"></i>Rate Alerts<small>your target rate and get alerted</small></li>
-                                    <li><i class="fa-solid fa-wave-triangle"></i>Historical Currency Rates<small>Check rates for any date</small></li>
-                                    <li>Travel Expenses Calculator<small>Calculate foreign exchange charges</small></li>
-                                    <li>Apps<small>apps and more</small> </li>
-                                    <li>More</li>
+                                    <li><div class="icon-align"><i class="fa-solid fa-chart-line"></i>Currency Charts<br><small>Trends for any currency</small></div></li>
+                                    <li><div class="icon-align"><i class="fa-solid fa-bell"></i>Rate Alerts<br><small>your target rate and get alerted</small></div></li>
+                                    <li><div class="icon-align"><i class="fa-solid fa-chart-line"></i>Historical Currency Rates<br><small>Check rates for any date</small></div></li>
+                                    <li><div class="icon-align"><i class="fa-solid fa-earth-oceania"></i> Travel Expenses Calculator<br><small>Calculate foreign exchange charges</small></div></li>
+                                    <li><div class="icon-align"><i class="fa-solid fa-mobile-button"></i> Apps<br><small>apps and more</small></div></li>
+                                    <li><div class="icon-align"><i class="fa-solid fa-circle-plus"></i>More</div></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="#">Resources</a>
                             <div class="sub-Menu menu">
                                 <ul>
-                                    <li>Help</li>
-                                    <li>Blog</li>
-                                    <li>Money Transfer Tip</small></li>
-                                    <li>Currency Encyclopedia</li>
-                                    <li>Currency Newsletters</li>
-                                    <li>Glossary</li>
-                                    <li>More</li>
+                                    <li><div class="menu-fa-align"><i class="fa-solid fa-circle-question"></i>Help</div></li>
+                                    <li><div class="menu-fa-align"><i class="fa-brands fa-blogger-b"></i>Blog</div></li>
+                                    <li><div class="menu-fa-align"><i class="fa-solid fa-lightbulb"></i>Money Transfer Tip</div></li>
+                                    <li><div class="menu-fa-align"><i class="fa-sharp fa-solid fa-book-open"></i>Currency Encyclopedia</div></li>
+                                    <li><div class="menu-fa-align"><i class="fa-solid fa-newspaper"></i>Currency Newsletters</div></li>
+                                    <li><div class="menu-fa-align"><i class="fa-solid fa-clipboard-check"></i>Glossary</div></li>
+                                    <li><div class="menu-fa-align"><i class="fa-solid fa-circle-plus"></i>More</div></li>
                                 </ul>
                             </div>
                         </li>
@@ -61,17 +64,34 @@
                 </div>
                 <div class="reg-section">
                     <ul>
-                        <li><a href="#">Sign In</a></li>
-                        <li><button type="button">Register</button></li>
+                        <li><a href="#">Sign In</a>
+                        <div class="sub-Menu">
+                            <ul>
+                                <li><div><i class="fa-solid fa-location-arrow"></i>Money Transfer</div></li>
+                                <li><div><i class="fa-solid fa-bell"></i>Rate Alerts</div></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li><button type="button">Register</button>
+                            <div class="sub-Menu Menu">
+                                <ul>
+                                    <li><div class="mt-transfer"><i class="fa-solid fa-location-arrow"></i>Money Transfer</div></li>
+                                    <li><div class="mt-transfer"><i class="fa-solid fa-bell"></i>Rate Alerts</div></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
-                    
                 </div>
-
             </nav>
+        </div>
+        <div class="sub-header">
+
         </div>
     </main>
 
     <script>
+
+        /*------------------Logo scrip-----------------*/
         let spanTexts = document.getElementsByTagName("span");
         window.onload = function(){
             for(spanText of spanTexts){
