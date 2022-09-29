@@ -16,6 +16,7 @@ nav {
     align-items: center;
     padding-inline: 5%;
     height: 80px;
+    z-index: 2;
 }
 
 .dashboard {
@@ -322,6 +323,112 @@ button {
 
 .sub-header{
     width: 100%;
-    height: 180px;
+    height: 300px;
     background:#292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.exchangeframe {
+    width: 90%;
+    height: 300px;
+    display: inline-block;
+    justify-content: center;
+    background: #fff;
+    position: absolute;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px 2px;
+    transform: translateY(50%);
+    border-radius: 10px;
+}
+
+.sub-header h2, p{
+    color: #fff;
+}
+
+.subHeaderTxt {
+    top: 20%;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.exchangeList ul {
+    display: inline-flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-around;
+    background: rgba(41, 41, 41, 0.08);
+    color: #292929;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.exchangeList ul li {
+    width: 25%;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.active-List {
+    background: #fff;
+    color: blue;
+    border-radius: 10px 0 0 0;
+    font-weight: 500;
+}
+
+.active-List, .exchangeList ul li:hover{
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.6);
+    opacity: 0.5;
+}
+
+.exchangeList .fa-solid {
+    margin-right: 10px;
+}
+
+
+.rowspan {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 5%;
+    align-items: center;
+    transform: translateY(60px);
+}
+
+.colspan1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.colspan2 .fa-solid{
+    height:45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-right: 15px;
+    border: 1px solid rgb(67, 67, 65);
+}
+
+
+
+input {
+    width: 320px;
+    height: 45px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(67, 67, 65);
 }
