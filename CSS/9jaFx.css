@@ -431,4 +431,26 @@ input {
     border-radius: 3px;
     outline: none;
     border: 1px solid rgb(67, 67, 65);
+    font-size: 16px;
+    padding: 5px;
+}
+
+small{
+    width: 500px;
+    background: lightblue;
+    color: gray;
+}
+
+.rowspan-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    padding-inline: 55px ;
+}
+
+.rowspan-footer button{
+    padding: 12px 20px
 }
